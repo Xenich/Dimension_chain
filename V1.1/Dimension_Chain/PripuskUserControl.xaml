@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="Dimension_Chain.PripuskUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" BorderBrush="Black">
+
+    <Grid >
+        <StackPanel HorizontalAlignment="Stretch" Margin="0,0,0,0" Name="stackPanel1" VerticalAlignment="Stretch" Background="#2C00FF00">
+            <Label Content="Припуск"  Name="MainLbl" FontWeight="Bold" FontSize="14" BorderBrush="Black" Foreground="Black" />
+            <Label Content="Минимум" Height="28" Name="label2" />            
+            <TextBox Name="textBoxMin" Text="0,1" TextChanged="textBoxMin_TextChanged"  />
+            <Label Content="Максимум" Height="28" Name="label1" />
+            <TextBox  Name="textBoxMax" Text="10" TextChanged="textBoxMax_TextChanged"  />           
+            <Label Height="Auto" MaxWidth="150"  >   
+                <Label.Content>
+                    <TextBlock Text="Укажите желаемые пределы припуска" TextWrapping="Wrap" TextAlignment="Left" />
+                </Label.Content>
+            </Label>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,86 @@
+\hypertarget{class_dimension___chain_1_1_vertex}{}\section{Dimension\+\_\+\+Chain.\+Vertex Class Reference}
+\label{class_dimension___chain_1_1_vertex}\index{Dimension\+\_\+\+Chain.\+Vertex@{Dimension\+\_\+\+Chain.\+Vertex}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dimension___chain_1_1_vertex_a57ae2d0098e07307070c4e140980527c}{Vertex}} (int \mbox{\hyperlink{class_dimension___chain_1_1_vertex_aa803e8c5e381e30ad498686633a3a4ae}{num}})
+\item 
+void \mbox{\hyperlink{class_dimension___chain_1_1_vertex_a027ea03e13737bce5e7de4fab41c828d}{Add\+Neighbor}} (\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}} neighbor, \mbox{\hyperlink{class_dimension___chain_1_1_value}{Value}} val, \mbox{\hyperlink{class_dimension___chain_1_1_dimension}{Dimension}} dim)
+\item 
+void \mbox{\hyperlink{class_dimension___chain_1_1_vertex_a912f3caec2dfba7f1e3f955ad20d1736}{Delete\+Neighbor}} (\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}} neighbor)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_dimension___chain_1_1_vertex_aa803e8c5e381e30ad498686633a3a4ae}{num}}
+\item 
+List$<$ \mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}} $>$ \mbox{\hyperlink{class_dimension___chain_1_1_vertex_a88374fb71c7e0c494307b501cf1cd3bd}{neighbors}} = new List$<$\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}$>$()
+\item 
+bool \mbox{\hyperlink{class_dimension___chain_1_1_vertex_af2e30f955bb2d8cba8f8c4846ecc767d}{visited}} = false
+\item 
+Dictionary$<$ \mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}, \mbox{\hyperlink{class_dimension___chain_1_1_dimension}{Dimension}} $>$ \mbox{\hyperlink{class_dimension___chain_1_1_vertex_af26ff58e451fc5b0777e08a2fb849800}{dimension\+To}} = new Dictionary$<$\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}, \mbox{\hyperlink{class_dimension___chain_1_1_dimension}{Dimension}}$>$()
+\item 
+Dictionary$<$ \mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}, \mbox{\hyperlink{class_dimension___chain_1_1_value}{Value}} $>$ \mbox{\hyperlink{class_dimension___chain_1_1_vertex_a4143488432955c4f229b0329ab8cd6e1}{distance\+To}} = new Dictionary$<$\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}, \mbox{\hyperlink{class_dimension___chain_1_1_value}{Value}}$>$()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_dimension___chain_1_1_vertex_a57ae2d0098e07307070c4e140980527c}\label{class_dimension___chain_1_1_vertex_a57ae2d0098e07307070c4e140980527c}} 
+\index{Dimension\+\_\+\+Chain\+::\+Vertex@{Dimension\+\_\+\+Chain\+::\+Vertex}!Vertex@{Vertex}}
+\index{Vertex@{Vertex}!Dimension\+\_\+\+Chain\+::\+Vertex@{Dimension\+\_\+\+Chain\+::\+Vertex}}
+\subsubsection{\texorpdfstring{Vertex()}{Vertex()}}
+{\footnotesize\ttfamily Dimension\+\_\+\+Chain.\+Vertex.\+Vertex (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dimension___chain_1_1_vertex_a027ea03e13737bce5e7de4fab41c828d}\label{class_dimension___chain_1_1_vertex_a027ea03e13737bce5e7de4fab41c828d}} 
+\index{Dimension\+\_\+\+Chain\+::\+Vertex@{Dimension\+\_\+\+Chain\+::\+Vertex}!Add\+Neighbor@{Add\+Neighbor}}
+\index{Add\+Neighbor@{Add\+Neighbor}!Dimension\+\_\+\+Chain\+::\+Vertex@{Dimension\+\_\+\+Chain\+::\+Vertex}}
+\subsubsection{\texorpdfstring{Add\+Neighbor()}{AddNeighbor()}}
+{\footnotesize\ttfamily void Dimension\+\_\+\+Chain.\+Vertex.\+Add\+Neighbor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}}]{neighbor,  }\item[{\mbox{\hyperlink{class_dimension___chain_1_1_value}{Value}}}]{val,  }\item[{\mbox{\hyperlink{class_dimension___chain_1_1_dimension}{Dimension}}}]{dim }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_dimension___chain_1_1_vertex_a912f3caec2dfba7f1e3f955ad20d1736}\label{class_dimension___chain_1_1_vertex_a912f3caec2dfba7f1e3f955ad20d1736}} 
+\index{Dimension\+\_\+\+Chain\+::\+Vertex@{Dimension\+\_\+\+Chain\+::\+Vertex}!Delete\+Neighbor@{Delete\+Neighbor}}
+\index{Delete\+Neighbor@{Delete\+Neighbor}!Dimension\+\_\+\+Chain\+::\+Vertex@{Dimension\+\_\+\+Chain\+::\+Vertex}}
+\subsubsection{\texorpdfstring{Delete\+Neighbor()}{DeleteNeighbor()}}
+{\footnotesize\ttfamily void Dimension\+\_\+\+Chain.\+Vertex.\+Delete\+Neighbor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}}]{neighbor }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_dimension___chain_1_1_vertex_af26ff58e451fc5b0777e08a2fb849800}\label{class_dimension___chain_1_1_vertex_af26ff58e451fc5b0777e08a2fb849800}} 
+\index{Dimension\+\_\+\+Chain\+::\+Vertex@{Dimension\+\_\+\+Chain\+::\+Vertex}!dimension\+To@{dimension\+To}}
+\index{dimension\+To@{dimension\+To}!Dimension\+\_\+\+Chain\+::\+Vertex@{Dimension\+\_\+\+Chain\+::\+Vertex}}
+\subsubsection{\texorpdfstring{dimension\+To}{dimensionTo}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}, \mbox{\hyperlink{class_dimension___chain_1_1_dimension}{Dimension}}$>$ Dimension\+\_\+\+Chain.\+Vertex.\+dimension\+To = new Dictionary$<$\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}, \mbox{\hyperlink{class_dimension___chain_1_1_dimension}{Dimension}}$>$()}
+
+\mbox{\Hypertarget{class_dimension___chain_1_1_vertex_a4143488432955c4f229b0329ab8cd6e1}\label{class_dimension___chain_1_1_vertex_a4143488432955c4f229b0329ab8cd6e1}} 
+\index{Dimension\+\_\+\+Chain\+::\+Vertex@{Dimension\+\_\+\+Chain\+::\+Vertex}!distance\+To@{distance\+To}}
+\index{distance\+To@{distance\+To}!Dimension\+\_\+\+Chain\+::\+Vertex@{Dimension\+\_\+\+Chain\+::\+Vertex}}
+\subsubsection{\texorpdfstring{distance\+To}{distanceTo}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}, \mbox{\hyperlink{class_dimension___chain_1_1_value}{Value}}$>$ Dimension\+\_\+\+Chain.\+Vertex.\+distance\+To = new Dictionary$<$\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}, \mbox{\hyperlink{class_dimension___chain_1_1_value}{Value}}$>$()}
+
+\mbox{\Hypertarget{class_dimension___chain_1_1_vertex_a88374fb71c7e0c494307b501cf1cd3bd}\label{class_dimension___chain_1_1_vertex_a88374fb71c7e0c494307b501cf1cd3bd}} 
+\index{Dimension\+\_\+\+Chain\+::\+Vertex@{Dimension\+\_\+\+Chain\+::\+Vertex}!neighbors@{neighbors}}
+\index{neighbors@{neighbors}!Dimension\+\_\+\+Chain\+::\+Vertex@{Dimension\+\_\+\+Chain\+::\+Vertex}}
+\subsubsection{\texorpdfstring{neighbors}{neighbors}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}$>$ Dimension\+\_\+\+Chain.\+Vertex.\+neighbors = new List$<$\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}$>$()}
+
+\mbox{\Hypertarget{class_dimension___chain_1_1_vertex_aa803e8c5e381e30ad498686633a3a4ae}\label{class_dimension___chain_1_1_vertex_aa803e8c5e381e30ad498686633a3a4ae}} 
+\index{Dimension\+\_\+\+Chain\+::\+Vertex@{Dimension\+\_\+\+Chain\+::\+Vertex}!num@{num}}
+\index{num@{num}!Dimension\+\_\+\+Chain\+::\+Vertex@{Dimension\+\_\+\+Chain\+::\+Vertex}}
+\subsubsection{\texorpdfstring{num}{num}}
+{\footnotesize\ttfamily int Dimension\+\_\+\+Chain.\+Vertex.\+num}
+
+\mbox{\Hypertarget{class_dimension___chain_1_1_vertex_af2e30f955bb2d8cba8f8c4846ecc767d}\label{class_dimension___chain_1_1_vertex_af2e30f955bb2d8cba8f8c4846ecc767d}} 
+\index{Dimension\+\_\+\+Chain\+::\+Vertex@{Dimension\+\_\+\+Chain\+::\+Vertex}!visited@{visited}}
+\index{visited@{visited}!Dimension\+\_\+\+Chain\+::\+Vertex@{Dimension\+\_\+\+Chain\+::\+Vertex}}
+\subsubsection{\texorpdfstring{visited}{visited}}
+{\footnotesize\ttfamily bool Dimension\+\_\+\+Chain.\+Vertex.\+visited = false}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_vertex_8cs}{Vertex.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,12 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="XAML Editor" Height="350" Width="525" WindowStartupLocation="CenterScreen">
+    <DockPanel>
+        <Button DockPanel.Dock="Top" Name="btnViewXAML" Width="auto" Height="auto" Padding="5" Margin="5"
+                Content="Code XAML" ></Button>
+        <TextBox AcceptsReturn="True" Name="txtCodeXAML" FontSize="14"
+                 Background="Black" Foreground="White" BorderBrush="LightBlue"
+                 BorderThickness="2" VerticalScrollBarVisibility="Auto" AcceptsTab="True">
+        </TextBox>
+    </DockPanel>
+</Window>

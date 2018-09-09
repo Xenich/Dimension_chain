@@ -1,0 +1,105 @@
+\hypertarget{class_dimension___chain_1_1_tech_graph}{}\section{Dimension\+\_\+\+Chain.\+Tech\+Graph Class Reference}
+\label{class_dimension___chain_1_1_tech_graph}\index{Dimension\+\_\+\+Chain.\+Tech\+Graph@{Dimension\+\_\+\+Chain.\+Tech\+Graph}}
+
+
+Граф, состоящий из вершин, которые связаны технологическими дугами  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_dimension___chain_1_1_tech_graph_a49d45bd79eaf34122021af1118156575}{Create\+Tech\+Dimension}} (\mbox{\hyperlink{class_dimension___chain_1_1_dimension}{Dimension}} d)
+\item 
+void \mbox{\hyperlink{class_dimension___chain_1_1_tech_graph_a23f591d1b16a26f6f5a8b3fb19928efd}{Delete\+Dimension}} (\mbox{\hyperlink{class_dimension___chain_1_1_dimension}{Dimension}} d)
+\item 
+void \mbox{\hyperlink{class_dimension___chain_1_1_tech_graph_a718d1eefbf5548e20411ef4563522cd8}{connected\+Component\+Search}} ()
+\item 
+void \mbox{\hyperlink{class_dimension___chain_1_1_tech_graph_ac4b9d760e7b6a890bc09988a2f25c0b4}{Search\+Circle}} ()
+\begin{DoxyCompactList}\small\item\em Поиск цикла, -\/ проверка на замкнутость размерной цепи \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dimension___chain_1_1_tech_graph_a4957fc3a457f3fc25a4dd468b149f442}{Visited\+False}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ \mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}, \mbox{\hyperlink{class_dimension___chain_1_1_mega_vertex}{Mega\+Vertex}} $>$ \mbox{\hyperlink{class_dimension___chain_1_1_tech_graph_a80c1cd831ba29a79fd9cedd2ef96e0d6}{dic\+V\+\_\+M}} = new Dictionary$<$\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}, \mbox{\hyperlink{class_dimension___chain_1_1_mega_vertex}{Mega\+Vertex}}$>$()
+\item 
+List$<$ \mbox{\hyperlink{class_dimension___chain_1_1_mega_vertex}{Mega\+Vertex}} $>$ \mbox{\hyperlink{class_dimension___chain_1_1_tech_graph_a8ae5de1b7b7cc6438d8dc879cc7baa5d}{mega\+List}} = new List$<$\mbox{\hyperlink{class_dimension___chain_1_1_mega_vertex}{Mega\+Vertex}}$>$()
+\item 
+List$<$ \mbox{\hyperlink{class_dimension___chain_1_1_mega_vertex}{Mega\+Vertex}} $>$ \mbox{\hyperlink{class_dimension___chain_1_1_tech_graph_a6a1f06b67ab3ec7ced24c72f67ca93fe}{connected\+Component\+List}} = new List$<$\mbox{\hyperlink{class_dimension___chain_1_1_mega_vertex}{Mega\+Vertex}}$>$()
+\item 
+bool \mbox{\hyperlink{class_dimension___chain_1_1_tech_graph_a56efac5fd6affbd1f2f4db5e4c7ec3f0}{cicle}} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Граф, состоящий из вершин, которые связаны технологическими дугами 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dimension___chain_1_1_tech_graph_a718d1eefbf5548e20411ef4563522cd8}\label{class_dimension___chain_1_1_tech_graph_a718d1eefbf5548e20411ef4563522cd8}} 
+\index{Dimension\+\_\+\+Chain\+::\+Tech\+Graph@{Dimension\+\_\+\+Chain\+::\+Tech\+Graph}!connected\+Component\+Search@{connected\+Component\+Search}}
+\index{connected\+Component\+Search@{connected\+Component\+Search}!Dimension\+\_\+\+Chain\+::\+Tech\+Graph@{Dimension\+\_\+\+Chain\+::\+Tech\+Graph}}
+\subsubsection{\texorpdfstring{connected\+Component\+Search()}{connectedComponentSearch()}}
+{\footnotesize\ttfamily void Dimension\+\_\+\+Chain.\+Tech\+Graph.\+connected\+Component\+Search (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_dimension___chain_1_1_tech_graph_a49d45bd79eaf34122021af1118156575}\label{class_dimension___chain_1_1_tech_graph_a49d45bd79eaf34122021af1118156575}} 
+\index{Dimension\+\_\+\+Chain\+::\+Tech\+Graph@{Dimension\+\_\+\+Chain\+::\+Tech\+Graph}!Create\+Tech\+Dimension@{Create\+Tech\+Dimension}}
+\index{Create\+Tech\+Dimension@{Create\+Tech\+Dimension}!Dimension\+\_\+\+Chain\+::\+Tech\+Graph@{Dimension\+\_\+\+Chain\+::\+Tech\+Graph}}
+\subsubsection{\texorpdfstring{Create\+Tech\+Dimension()}{CreateTechDimension()}}
+{\footnotesize\ttfamily void Dimension\+\_\+\+Chain.\+Tech\+Graph.\+Create\+Tech\+Dimension (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dimension___chain_1_1_dimension}{Dimension}}}]{d }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_dimension___chain_1_1_tech_graph_a23f591d1b16a26f6f5a8b3fb19928efd}\label{class_dimension___chain_1_1_tech_graph_a23f591d1b16a26f6f5a8b3fb19928efd}} 
+\index{Dimension\+\_\+\+Chain\+::\+Tech\+Graph@{Dimension\+\_\+\+Chain\+::\+Tech\+Graph}!Delete\+Dimension@{Delete\+Dimension}}
+\index{Delete\+Dimension@{Delete\+Dimension}!Dimension\+\_\+\+Chain\+::\+Tech\+Graph@{Dimension\+\_\+\+Chain\+::\+Tech\+Graph}}
+\subsubsection{\texorpdfstring{Delete\+Dimension()}{DeleteDimension()}}
+{\footnotesize\ttfamily void Dimension\+\_\+\+Chain.\+Tech\+Graph.\+Delete\+Dimension (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dimension___chain_1_1_dimension}{Dimension}}}]{d }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_dimension___chain_1_1_tech_graph_ac4b9d760e7b6a890bc09988a2f25c0b4}\label{class_dimension___chain_1_1_tech_graph_ac4b9d760e7b6a890bc09988a2f25c0b4}} 
+\index{Dimension\+\_\+\+Chain\+::\+Tech\+Graph@{Dimension\+\_\+\+Chain\+::\+Tech\+Graph}!Search\+Circle@{Search\+Circle}}
+\index{Search\+Circle@{Search\+Circle}!Dimension\+\_\+\+Chain\+::\+Tech\+Graph@{Dimension\+\_\+\+Chain\+::\+Tech\+Graph}}
+\subsubsection{\texorpdfstring{Search\+Circle()}{SearchCircle()}}
+{\footnotesize\ttfamily void Dimension\+\_\+\+Chain.\+Tech\+Graph.\+Search\+Circle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Поиск цикла, -\/ проверка на замкнутость размерной цепи 
+
+\mbox{\Hypertarget{class_dimension___chain_1_1_tech_graph_a4957fc3a457f3fc25a4dd468b149f442}\label{class_dimension___chain_1_1_tech_graph_a4957fc3a457f3fc25a4dd468b149f442}} 
+\index{Dimension\+\_\+\+Chain\+::\+Tech\+Graph@{Dimension\+\_\+\+Chain\+::\+Tech\+Graph}!Visited\+False@{Visited\+False}}
+\index{Visited\+False@{Visited\+False}!Dimension\+\_\+\+Chain\+::\+Tech\+Graph@{Dimension\+\_\+\+Chain\+::\+Tech\+Graph}}
+\subsubsection{\texorpdfstring{Visited\+False()}{VisitedFalse()}}
+{\footnotesize\ttfamily void Dimension\+\_\+\+Chain.\+Tech\+Graph.\+Visited\+False (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_dimension___chain_1_1_tech_graph_a56efac5fd6affbd1f2f4db5e4c7ec3f0}\label{class_dimension___chain_1_1_tech_graph_a56efac5fd6affbd1f2f4db5e4c7ec3f0}} 
+\index{Dimension\+\_\+\+Chain\+::\+Tech\+Graph@{Dimension\+\_\+\+Chain\+::\+Tech\+Graph}!cicle@{cicle}}
+\index{cicle@{cicle}!Dimension\+\_\+\+Chain\+::\+Tech\+Graph@{Dimension\+\_\+\+Chain\+::\+Tech\+Graph}}
+\subsubsection{\texorpdfstring{cicle}{cicle}}
+{\footnotesize\ttfamily bool Dimension\+\_\+\+Chain.\+Tech\+Graph.\+cicle = false}
+
+\mbox{\Hypertarget{class_dimension___chain_1_1_tech_graph_a6a1f06b67ab3ec7ced24c72f67ca93fe}\label{class_dimension___chain_1_1_tech_graph_a6a1f06b67ab3ec7ced24c72f67ca93fe}} 
+\index{Dimension\+\_\+\+Chain\+::\+Tech\+Graph@{Dimension\+\_\+\+Chain\+::\+Tech\+Graph}!connected\+Component\+List@{connected\+Component\+List}}
+\index{connected\+Component\+List@{connected\+Component\+List}!Dimension\+\_\+\+Chain\+::\+Tech\+Graph@{Dimension\+\_\+\+Chain\+::\+Tech\+Graph}}
+\subsubsection{\texorpdfstring{connected\+Component\+List}{connectedComponentList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_dimension___chain_1_1_mega_vertex}{Mega\+Vertex}}$>$ Dimension\+\_\+\+Chain.\+Tech\+Graph.\+connected\+Component\+List = new List$<$\mbox{\hyperlink{class_dimension___chain_1_1_mega_vertex}{Mega\+Vertex}}$>$()}
+
+\mbox{\Hypertarget{class_dimension___chain_1_1_tech_graph_a80c1cd831ba29a79fd9cedd2ef96e0d6}\label{class_dimension___chain_1_1_tech_graph_a80c1cd831ba29a79fd9cedd2ef96e0d6}} 
+\index{Dimension\+\_\+\+Chain\+::\+Tech\+Graph@{Dimension\+\_\+\+Chain\+::\+Tech\+Graph}!dic\+V\+\_\+M@{dic\+V\+\_\+M}}
+\index{dic\+V\+\_\+M@{dic\+V\+\_\+M}!Dimension\+\_\+\+Chain\+::\+Tech\+Graph@{Dimension\+\_\+\+Chain\+::\+Tech\+Graph}}
+\subsubsection{\texorpdfstring{dic\+V\+\_\+M}{dicV\_M}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}, \mbox{\hyperlink{class_dimension___chain_1_1_mega_vertex}{Mega\+Vertex}}$>$ Dimension\+\_\+\+Chain.\+Tech\+Graph.\+dic\+V\+\_\+M = new Dictionary$<$\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}, \mbox{\hyperlink{class_dimension___chain_1_1_mega_vertex}{Mega\+Vertex}}$>$()}
+
+\mbox{\Hypertarget{class_dimension___chain_1_1_tech_graph_a8ae5de1b7b7cc6438d8dc879cc7baa5d}\label{class_dimension___chain_1_1_tech_graph_a8ae5de1b7b7cc6438d8dc879cc7baa5d}} 
+\index{Dimension\+\_\+\+Chain\+::\+Tech\+Graph@{Dimension\+\_\+\+Chain\+::\+Tech\+Graph}!mega\+List@{mega\+List}}
+\index{mega\+List@{mega\+List}!Dimension\+\_\+\+Chain\+::\+Tech\+Graph@{Dimension\+\_\+\+Chain\+::\+Tech\+Graph}}
+\subsubsection{\texorpdfstring{mega\+List}{megaList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_dimension___chain_1_1_mega_vertex}{Mega\+Vertex}}$>$ Dimension\+\_\+\+Chain.\+Tech\+Graph.\+mega\+List = new List$<$\mbox{\hyperlink{class_dimension___chain_1_1_mega_vertex}{Mega\+Vertex}}$>$()}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_tech_graph_8cs}{Tech\+Graph.\+cs}}\end{DoxyCompactItemize}

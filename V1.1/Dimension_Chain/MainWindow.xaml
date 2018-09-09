@@ -1,0 +1,87 @@
+﻿<!-- Comment -->
+<Window x:Class="Dimension_Chain.MainWindow"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Dimension_Chain"
+        Title="Рассчёт размерных цепей" Height="904.4" Width="1326.4" WindowStartupLocation="CenterScreen" KeyDown="Window_KeyDown" WindowState="Maximized" WindowStyle="SingleBorderWindow">
+
+    <StackPanel  Name="stackPanel1" Orientation="Vertical" >
+        <Menu Height="23" Name="menu1" HorizontalAlignment="Stretch">
+            <MenuItem Header="Файл" Name="File" VerticalContentAlignment="Center">
+                <MenuItem Header="Новый проект"  Name="NewProject" Click="NewProject_Click" />
+                <Separator />
+                <MenuItem Header="Открыть" Name="Open" Click="Open_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/Dimension_Chain;component/Open.bmp" HorizontalAlignment="Left"  VerticalAlignment="Center" Width="27" Height="27" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="Сохранить как..." Name="SaveAs" Click="SaveAs_Click" VerticalAlignment="Center">
+                    <MenuItem.Icon>
+                        <Image Source="/Dimension_Chain;component/Save.bmp" HorizontalAlignment="Left"  VerticalAlignment="Center" Width="27" Height="27"  />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Сохранить" Name="Save" IsEnabled="False" Click="Save_Click_1" />
+            </MenuItem>
+            <MenuItem Header="Печать (тест)" Name="Print" Click="Print_Click">
+                <MenuItem Header="В разработке" Name="In">
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Помощь" Name="about">
+                <MenuItem Header="Автор" Name="Author">
+                    <MenuItem Header="Личман Дмитрий Александрович" />
+                </MenuItem>
+                <MenuItem Header="Как пользоваться" Click="MenuItemHow_Click" />
+            </MenuItem>
+        </Menu>
+
+        <Grid Name="mainGrid" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+            <StackPanel  Name="leftStackPanel" MaxWidth="110" >
+                <Button Height="Auto" Name="buttonTech" Width="auto" Margin="1" Padding="4" Click="buttonTech_Click" Foreground="Black" BorderBrush="Black" Background="#0A000000">
+                    <Button.Content>
+                        <TextBlock Text="Создать технологический размер" TextWrapping="Wrap" TextAlignment="Center" FontSize="14" FontWeight="Normal" />
+                    </Button.Content>
+                </Button>
+                <Separator Height="15" Name="separator1" />
+                <Label  Name="label1" HorizontalAlignment="Center" Padding="5" Margin="0,0,0,0">
+                    <Label.Content>
+                        <TextBlock Text="Замыкающие звенья" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="14" />
+                    </Label.Content>
+                </Label>
+                <Button Height="Auto" Name="buttonKonstr" Width="auto" Margin="1" Padding="4" VerticalAlignment="Stretch" MaxWidth="130" VerticalContentAlignment="Center" BorderThickness="1" Click="buttonKonstr_Click" Background="#4000C9FF">
+                    <Button.Content>
+                        <TextBlock Text="Добавить конструкторский размер" TextWrapping="Wrap" TextAlignment="Center" FontSize="14" Foreground="#FF080000" />
+                    </Button.Content>
+                </Button>
+
+                <Button Height="Auto" Name="buttonPripusk" Width="auto" Margin="1" Padding="4" Click="buttonPripusk_Click" Background="#5A39FF3B">
+                    <Button.Content>
+                        <TextBlock Text="Добавить припуск" TextWrapping="Wrap" TextAlignment="Center" FontSize="14" />
+                    </Button.Content>
+                </Button>
+                <Label Content="Отладка" Margin="0,30,0,0" Padding="0" HorizontalAlignment="Center" />
+                <TextBox Visibility="Visible"  Height="200" Name="textBoxTest" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" TextChanged="textBoxTest_TextChanged" Text="" VerticalAlignment="Bottom" Padding="0" Margin="0" />
+            </StackPanel>
+
+
+            <Label Grid.Column="1"  Name="lblStateDown" FontSize="16" Foreground="Red" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+            <Canvas  Name="MainCanvas1" ClipToBounds="True"  Grid.Column="1" Width="2500" Height="2500" >
+                <Label  Name="lblStateCicle" FontSize="16" Foreground="Red" FontWeight="Bold" HorizontalAlignment="Center" />
+                <Canvas Name="MainCanvas" Background="#0B009CFF" MouseLeftButtonDown="MainCanvas_MouseLeftButtonDown" Height="5000" Width="5000" MouseDown="MainCanvas_MouseDown" MouseMove="MainCanvas_MouseMove" MouseUp="MainCanvas_MouseUp" Canvas.Left="-2705" Canvas.Top="-2500" MouseLeave="MainCanvas_MouseLeave" MouseWheel="MainCanvas_MouseWheel" >
+                    <!-- <Line X1="2500" Y1="0" X2="2500" Y2="5000" StrokeThickness="0.5" Stroke="Black"/>-->
+                    <!--<Line X1="0" Y1="2500" X2="5000" Y2="2500" StrokeThickness="0.5" Stroke="Black" />-->
+
+                </Canvas>
+            </Canvas>
+            <StackPanel Grid.Column="2" Margin="0"  Name="rightStackPanel" >
+
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+</Window>

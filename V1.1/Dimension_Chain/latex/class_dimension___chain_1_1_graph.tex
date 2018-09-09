@@ -1,0 +1,122 @@
+\hypertarget{class_dimension___chain_1_1_graph}{}\section{Dimension\+\_\+\+Chain.\+Graph Class Reference}
+\label{class_dimension___chain_1_1_graph}\index{Dimension\+\_\+\+Chain.\+Graph@{Dimension\+\_\+\+Chain.\+Graph}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}} \mbox{\hyperlink{class_dimension___chain_1_1_graph_ac175fc4299e2577a99d7b6c197bae4d2}{Create\+Vertex}} ()
+\item 
+bool \mbox{\hyperlink{class_dimension___chain_1_1_graph_a7b424d53464cbb322db7944f2ad6bb7a}{Create\+Nul}} (\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}} v1, \mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}} v2)
+\item 
+\mbox{\hyperlink{class_dimension___chain_1_1_dimension}{Dimension}} \mbox{\hyperlink{class_dimension___chain_1_1_graph_ada5a731ebbb09267d501292d27db32fc}{Create\+Closing\+Link}} (\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}} v1, \mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}} v2, \mbox{\hyperlink{namespace_dimension___chain_a6ec9051138598c61cc00acf2547dced4}{type}} typ)
+\item 
+\mbox{\hyperlink{class_dimension___chain_1_1_dimension}{Dimension}} \mbox{\hyperlink{class_dimension___chain_1_1_graph_a2a5db4af48b7b6c7595a79912b47c81e}{Create\+Tech\+Dimension}} (\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}} v1, \mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}} v2, \mbox{\hyperlink{class_dimension___chain_1_1_value}{Value}} val)
+\item 
+void \mbox{\hyperlink{class_dimension___chain_1_1_graph_a781ea9fd0f61ebf19698b1964b7a9f15}{Delete\+Dimension}} (\mbox{\hyperlink{class_dimension___chain_1_1_dimension}{Dimension}} dim)
+\begin{DoxyCompactList}\small\item\em Удаление размера и всех связанных с ним вершин и всех связанных с ними размерами \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_dimension___chain_1_1_value}{Value}} \mbox{\hyperlink{class_dimension___chain_1_1_graph_a3817dc05a66fc09a8655ac35a63434a2}{B\+F\+S\+\_\+\+Find\+Short\+Way}} (\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}} source, \mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}} destination, List$<$ \mbox{\hyperlink{class_dimension___chain_1_1_dimension}{Dimension}} $>$ received\+List)
+\item 
+void \mbox{\hyperlink{class_dimension___chain_1_1_graph_af94dc71f4cffd52f1eba00301d9e450b}{Visited\+False}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_dimension___chain_1_1_graph_a787a940fcdc7c2a3e65a53762b983d4f}{num}} = 0
+\item 
+List$<$ \mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}} $>$ \mbox{\hyperlink{class_dimension___chain_1_1_graph_a74a6519101a76d81f7ad02c72915648a}{vertex\+List}} = new List$<$\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}$>$()
+\item 
+List$<$ \mbox{\hyperlink{class_dimension___chain_1_1_dimension}{Dimension}} $>$ \mbox{\hyperlink{class_dimension___chain_1_1_graph_a97809fd98170fabe659b9de4c9202605}{dimension\+List}} = new List$<$\mbox{\hyperlink{class_dimension___chain_1_1_dimension}{Dimension}}$>$()
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_dimension___chain_1_1_graph_a3b83aa20522a80c1e33ee1975a705278}{is\+Cicle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dimension___chain_1_1_graph_a3817dc05a66fc09a8655ac35a63434a2}\label{class_dimension___chain_1_1_graph_a3817dc05a66fc09a8655ac35a63434a2}} 
+\index{Dimension\+\_\+\+Chain\+::\+Graph@{Dimension\+\_\+\+Chain\+::\+Graph}!B\+F\+S\+\_\+\+Find\+Short\+Way@{B\+F\+S\+\_\+\+Find\+Short\+Way}}
+\index{B\+F\+S\+\_\+\+Find\+Short\+Way@{B\+F\+S\+\_\+\+Find\+Short\+Way}!Dimension\+\_\+\+Chain\+::\+Graph@{Dimension\+\_\+\+Chain\+::\+Graph}}
+\subsubsection{\texorpdfstring{B\+F\+S\+\_\+\+Find\+Short\+Way()}{BFS\_FindShortWay()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dimension___chain_1_1_value}{Value}} Dimension\+\_\+\+Chain.\+Graph.\+B\+F\+S\+\_\+\+Find\+Short\+Way (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}}]{source,  }\item[{\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}}]{destination,  }\item[{List$<$ \mbox{\hyperlink{class_dimension___chain_1_1_dimension}{Dimension}} $>$}]{received\+List }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_dimension___chain_1_1_graph_ada5a731ebbb09267d501292d27db32fc}\label{class_dimension___chain_1_1_graph_ada5a731ebbb09267d501292d27db32fc}} 
+\index{Dimension\+\_\+\+Chain\+::\+Graph@{Dimension\+\_\+\+Chain\+::\+Graph}!Create\+Closing\+Link@{Create\+Closing\+Link}}
+\index{Create\+Closing\+Link@{Create\+Closing\+Link}!Dimension\+\_\+\+Chain\+::\+Graph@{Dimension\+\_\+\+Chain\+::\+Graph}}
+\subsubsection{\texorpdfstring{Create\+Closing\+Link()}{CreateClosingLink()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dimension___chain_1_1_dimension}{Dimension}} Dimension\+\_\+\+Chain.\+Graph.\+Create\+Closing\+Link (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}}]{v1,  }\item[{\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}}]{v2,  }\item[{\mbox{\hyperlink{namespace_dimension___chain_a6ec9051138598c61cc00acf2547dced4}{type}}}]{typ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_dimension___chain_1_1_graph_a7b424d53464cbb322db7944f2ad6bb7a}\label{class_dimension___chain_1_1_graph_a7b424d53464cbb322db7944f2ad6bb7a}} 
+\index{Dimension\+\_\+\+Chain\+::\+Graph@{Dimension\+\_\+\+Chain\+::\+Graph}!Create\+Nul@{Create\+Nul}}
+\index{Create\+Nul@{Create\+Nul}!Dimension\+\_\+\+Chain\+::\+Graph@{Dimension\+\_\+\+Chain\+::\+Graph}}
+\subsubsection{\texorpdfstring{Create\+Nul()}{CreateNul()}}
+{\footnotesize\ttfamily bool Dimension\+\_\+\+Chain.\+Graph.\+Create\+Nul (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}}]{v1,  }\item[{\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}}]{v2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_dimension___chain_1_1_graph_a2a5db4af48b7b6c7595a79912b47c81e}\label{class_dimension___chain_1_1_graph_a2a5db4af48b7b6c7595a79912b47c81e}} 
+\index{Dimension\+\_\+\+Chain\+::\+Graph@{Dimension\+\_\+\+Chain\+::\+Graph}!Create\+Tech\+Dimension@{Create\+Tech\+Dimension}}
+\index{Create\+Tech\+Dimension@{Create\+Tech\+Dimension}!Dimension\+\_\+\+Chain\+::\+Graph@{Dimension\+\_\+\+Chain\+::\+Graph}}
+\subsubsection{\texorpdfstring{Create\+Tech\+Dimension()}{CreateTechDimension()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dimension___chain_1_1_dimension}{Dimension}} Dimension\+\_\+\+Chain.\+Graph.\+Create\+Tech\+Dimension (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}}]{v1,  }\item[{\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}}]{v2,  }\item[{\mbox{\hyperlink{class_dimension___chain_1_1_value}{Value}}}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_dimension___chain_1_1_graph_ac175fc4299e2577a99d7b6c197bae4d2}\label{class_dimension___chain_1_1_graph_ac175fc4299e2577a99d7b6c197bae4d2}} 
+\index{Dimension\+\_\+\+Chain\+::\+Graph@{Dimension\+\_\+\+Chain\+::\+Graph}!Create\+Vertex@{Create\+Vertex}}
+\index{Create\+Vertex@{Create\+Vertex}!Dimension\+\_\+\+Chain\+::\+Graph@{Dimension\+\_\+\+Chain\+::\+Graph}}
+\subsubsection{\texorpdfstring{Create\+Vertex()}{CreateVertex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}} Dimension\+\_\+\+Chain.\+Graph.\+Create\+Vertex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_dimension___chain_1_1_graph_a781ea9fd0f61ebf19698b1964b7a9f15}\label{class_dimension___chain_1_1_graph_a781ea9fd0f61ebf19698b1964b7a9f15}} 
+\index{Dimension\+\_\+\+Chain\+::\+Graph@{Dimension\+\_\+\+Chain\+::\+Graph}!Delete\+Dimension@{Delete\+Dimension}}
+\index{Delete\+Dimension@{Delete\+Dimension}!Dimension\+\_\+\+Chain\+::\+Graph@{Dimension\+\_\+\+Chain\+::\+Graph}}
+\subsubsection{\texorpdfstring{Delete\+Dimension()}{DeleteDimension()}}
+{\footnotesize\ttfamily void Dimension\+\_\+\+Chain.\+Graph.\+Delete\+Dimension (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dimension___chain_1_1_dimension}{Dimension}}}]{dim }\end{DoxyParamCaption})}
+
+
+
+Удаление размера и всех связанных с ним вершин и всех связанных с ними размерами 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dim} & Удаляемый размер\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dimension___chain_1_1_graph_af94dc71f4cffd52f1eba00301d9e450b}\label{class_dimension___chain_1_1_graph_af94dc71f4cffd52f1eba00301d9e450b}} 
+\index{Dimension\+\_\+\+Chain\+::\+Graph@{Dimension\+\_\+\+Chain\+::\+Graph}!Visited\+False@{Visited\+False}}
+\index{Visited\+False@{Visited\+False}!Dimension\+\_\+\+Chain\+::\+Graph@{Dimension\+\_\+\+Chain\+::\+Graph}}
+\subsubsection{\texorpdfstring{Visited\+False()}{VisitedFalse()}}
+{\footnotesize\ttfamily void Dimension\+\_\+\+Chain.\+Graph.\+Visited\+False (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_dimension___chain_1_1_graph_a97809fd98170fabe659b9de4c9202605}\label{class_dimension___chain_1_1_graph_a97809fd98170fabe659b9de4c9202605}} 
+\index{Dimension\+\_\+\+Chain\+::\+Graph@{Dimension\+\_\+\+Chain\+::\+Graph}!dimension\+List@{dimension\+List}}
+\index{dimension\+List@{dimension\+List}!Dimension\+\_\+\+Chain\+::\+Graph@{Dimension\+\_\+\+Chain\+::\+Graph}}
+\subsubsection{\texorpdfstring{dimension\+List}{dimensionList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_dimension___chain_1_1_dimension}{Dimension}}$>$ Dimension\+\_\+\+Chain.\+Graph.\+dimension\+List = new List$<$\mbox{\hyperlink{class_dimension___chain_1_1_dimension}{Dimension}}$>$()}
+
+\mbox{\Hypertarget{class_dimension___chain_1_1_graph_a787a940fcdc7c2a3e65a53762b983d4f}\label{class_dimension___chain_1_1_graph_a787a940fcdc7c2a3e65a53762b983d4f}} 
+\index{Dimension\+\_\+\+Chain\+::\+Graph@{Dimension\+\_\+\+Chain\+::\+Graph}!num@{num}}
+\index{num@{num}!Dimension\+\_\+\+Chain\+::\+Graph@{Dimension\+\_\+\+Chain\+::\+Graph}}
+\subsubsection{\texorpdfstring{num}{num}}
+{\footnotesize\ttfamily int Dimension\+\_\+\+Chain.\+Graph.\+num = 0}
+
+\mbox{\Hypertarget{class_dimension___chain_1_1_graph_a74a6519101a76d81f7ad02c72915648a}\label{class_dimension___chain_1_1_graph_a74a6519101a76d81f7ad02c72915648a}} 
+\index{Dimension\+\_\+\+Chain\+::\+Graph@{Dimension\+\_\+\+Chain\+::\+Graph}!vertex\+List@{vertex\+List}}
+\index{vertex\+List@{vertex\+List}!Dimension\+\_\+\+Chain\+::\+Graph@{Dimension\+\_\+\+Chain\+::\+Graph}}
+\subsubsection{\texorpdfstring{vertex\+List}{vertexList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}$>$ Dimension\+\_\+\+Chain.\+Graph.\+vertex\+List = new List$<$\mbox{\hyperlink{class_dimension___chain_1_1_vertex}{Vertex}}$>$()}
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_dimension___chain_1_1_graph_a3b83aa20522a80c1e33ee1975a705278}\label{class_dimension___chain_1_1_graph_a3b83aa20522a80c1e33ee1975a705278}} 
+\index{Dimension\+\_\+\+Chain\+::\+Graph@{Dimension\+\_\+\+Chain\+::\+Graph}!is\+Cicle@{is\+Cicle}}
+\index{is\+Cicle@{is\+Cicle}!Dimension\+\_\+\+Chain\+::\+Graph@{Dimension\+\_\+\+Chain\+::\+Graph}}
+\subsubsection{\texorpdfstring{is\+Cicle}{isCicle}}
+{\footnotesize\ttfamily bool Dimension\+\_\+\+Chain.\+Graph.\+is\+Cicle\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_graph_8cs}{Graph.\+cs}}\end{DoxyCompactItemize}
