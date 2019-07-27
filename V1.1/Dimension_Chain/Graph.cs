@@ -6,7 +6,7 @@ using System.Text;
 namespace Dimension_Chain
 {
     [Serializable]
-    class Graph
+    class Graph             // Класс Graph - это MODEL проекта
     {
         public int num = 0;                         
         public List<Vertex> vertexList = new List<Vertex>();                // список вершин графа 
